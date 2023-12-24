@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    margin: 2rem;
+}
+
+p , h1 {
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+li {
+    margin: 0 0 1.3rem 1.8rem;
+    padding-left: 0.3rem;
+    list-style-image: url(assets/images/icon-list.svg);
+    font-size: 1.1rem;
+}
+
+::marker {
+    margin-top: 0.5rem;
+}
+
+.submit-btn {
+    text-decoration: none;
+    margin-top: 1.7rem;
+    padding: 1.2rem;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 11px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    display: inline-block;
+}
+
+@media screen and (min-width:915px) {
+    body {
+        height: 100vh;
+        /* margin: 2rem 1rem 2rem 1rem; */
+        background-color: hsl(234, 29%, 20%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+    }
+    main {
+        margin: 0;
+    }
+    #desktop-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 60%;
+        height: 510px;
+        border-radius: 21px;
+        padding: 1rem;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        /* margin: 1rem; */
+        object-fit: contain;
+    }
+    h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0.8rem;
+        margin-top: 2rem;
+        color: hsl(234, 29%, 20%);
+    }
+    p {
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+    li {
+        margin-bottom: 0.5rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    
+    label {
+        font-size: 0.7rem;
+        font-weight: bold;
+        border-radius: 7px;
+        margin: 2rem 0 0.4rem 0 !important;
+    }
+
+    input {
+        width: 93% !important;
+    }
+    .submit-btn {
+        padding: 0.9rem 0;
+        margin-top: 1.3rem;
+        margin-bottom: 3rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+        border-radius: 7px;
+        width: 93%;
+    }
+    main {
+        padding: 4rem 2rem;
+    }
+}

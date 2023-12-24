@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="thankyouStyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="thanks-desktop-container">
+      <img src="/assets/images/icon-success.svg" alt="" id="sucess-icon" />
+      <h2>Thanks for subscribing!</h2>
+      <p>
+        A confirmation email has been sent to
+        <span id="subscriberEmail" style="font-weight: bold"></span> Please open
+        it and click the button inside to confirm your subscription.
+      </p>
+      <button type="submit" class="submit-btn" id="dismiss-btn">Dismiss message</button>
+    </div>
+
+    <script>
+      // 1st method for email.retrieving
+      // var emailVal = sessionStorage.getItem('emailValue')
+      // document.getElementById('subscriberEmail').innerText = emailVal
+      //2nd method
+      var urlparams = new URLSearchParams(window.location.search);
+      var subscriberEmail = urlparams.get("email");
+      document.getElementById("subscriberEmail").innerText = subscriberEmail;
+    </script>
+  </body>
+</html>

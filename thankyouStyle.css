@@ -1,0 +1,55 @@
+body {
+    height: 100vh;
+    margin: 36% 2rem;
+    /* display: grid; */
+}
+img {
+    margin-bottom: 2.4rem;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 47px;
+    margin-bottom: 2rem;
+}
+
+p {
+    line-height: 32px;
+}
+
+.submit-btn {
+    margin-top: 75%;
+}
+
+@media screen and (min-width: 915px) {
+    body {
+        margin: 0;
+    }
+    #sucess-icon {
+        width: auto;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    #thanks-desktop-container {
+        width: 36%;
+        height: 90%;
+        padding: 2.5rem 3.5rem;
+        border-radius: 30px;
+        background-color: white;
+    }
+    h2 {
+        margin-bottom: 1.2rem;
+        color: hsl(234, 29%, 20%);
+    }
+    #dismiss-btn {
+        margin-top: 0.8rem;
+        margin-bottom: 0rem;
+        width: 100%;
+        padding: 1rem 0;
+    }
+    p {
+        line-height: 23px;
+        font-size: 0.9rem;
+        color: hsl(234, 29%, 20%);
+    }
+}
