@@ -7,6 +7,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    /* margin: 36% 2rem; */
 }
 
 main {
@@ -21,7 +23,7 @@ h1 {
     font-size: 2.8rem;
 }
 
-p {
+#index-p {
     font-size: 1.2rem;
 }
 
@@ -50,6 +52,42 @@ li {
     display: inline-block;
 }
 
+#sucess-icon {
+    margin-bottom: 2.4rem;
+}
+
+#thanks-p {
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+
+/* .submit-btn {
+    margin-top: 75%;
+} */
+
+.hidden {
+    visibility: hidden;
+}
+
+#desktop-container {
+    position: absolute;
+}
+
+#thanks-container {
+    position: absolute;
+    margin: 50% 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 47px;
+    margin-bottom: 2rem;
+}
+
+#dismiss-btn {
+    margin-top: 70%;
+}
+
 @media screen and (min-width:915px) {
     body {
         height: 100vh;
@@ -59,6 +97,7 @@ li {
         justify-content: center;
         align-items: center;
         padding: 4rem;
+        margin: 0;
     }
     main {
         margin: 0;
@@ -73,6 +112,7 @@ li {
         height: 510px;
         border-radius: 21px;
         padding: 1rem;
+        position: relative;
     }
     img {
         width: 100%;
@@ -86,7 +126,7 @@ li {
         margin-top: 2rem;
         color: hsl(234, 29%, 20%);
     }
-    p {
+    #index-p {
         font-size: 0.8rem;
         line-height: 20px;
     }
@@ -117,5 +157,34 @@ li {
     }
     main {
         padding: 4rem 2rem;
+    }
+    #sucess-icon {
+        width: auto;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    #thanks-container {
+        width: 33%;
+        /* height: 90%; */
+        padding: 3rem 3.5rem;
+        border-radius: 30px;
+        background-color: white;
+    }
+    h2 {
+        margin-bottom: 1.2rem;
+        color: hsl(234, 29%, 20%);
+        font-size: 3rem;
+        line-height: 47px;
+    }
+    #dismiss-btn {
+        margin-top: 0.8rem;
+        margin-bottom: 0rem;
+        width: 100%;
+        padding: 1rem 0;
+    }
+    #thanks-p {
+        line-height: 23px;
+        font-size: 0.9rem;
+        color: hsl(234, 29%, 20%);
     }
 }
